@@ -232,7 +232,33 @@
                                     </li>
                                 </ul>
                             </div>
+                            <button type="button" class="search-btn">Search</button>
                         </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Form Section End -->
+
+    <!-- Feature Section Begin -->
+    <section class="feature-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Welcome to OM City Designs</h2>
+                        <br />
+                        <p>If you’re looking to design your dream home but don’t know where to begin, you’re in the
+                            right
+                            place! At OM City Designs, we offer readymade house plans created by top floor plan
+                            designers.
+                            You can download one of our existing plans or place a custom order with different
+                            specifications! Browse our wide range of house designs for residential or commercial
+                            property
+                            in Africa as well as other parts of the world. Take a look at our popular house plan options
+                            available in traditional and modern architectural designs. Our team is happy to help if you
+                            require further assistance.</p>
                     </div>
                 </div>
             </div>
@@ -367,94 +393,6 @@
                             available in traditional and modern architectural designs. Our team is happy to help if you
                             require further assistance.</p>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="feature-carousel owl-carousel">
-                    <div class="col-lg-4">
-                        <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/home/one_bedroom.jpg">
-                                <div class="pic-tag">
-                                    <div class="f-text">Trending</div>
-                                    <div class="s-text">For Sale</div>
-                                </div>
-                            </div>
-                            <div class="fi-text">
-                                <div class="inside-text">
-                                    <h4>1 Bedroom</h4>
-                                    <ul>
-                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
-                                    </ul>
-                                    <h5 class="price">$1000<span></span></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/home/three_bedroom.jpg">
-                                <div class="pic-tag">
-                                    <div class="f-text">Trending</div>
-                                    <div class="s-text">For Sale</div>
-                                </div>
-                            </div>
-                            <div class="fi-text">
-                                <div class="inside-text">
-                                    <h4>3 Bedroom</h4>
-                                    <ul>
-                                        <li><i class="fa fa-tag"></i> House Plan REFOM34HRE</li>
-                                    </ul>
-                                    <h5 class="price">$1200<span></span></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/home/five_bedroom.jpg">
-                                <div class="pic-tag">
-                                    <div class="f-text">Trending</div>
-                                    <div class="s-text">For Sale</div>
-                                </div>
-                                <div class="feature-author">
-                                    <div class="fa-pic">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fi-text">
-                                <div class="inside-text">
-                                    <h4>5 Bedroom</h4>
-                                    <ul>
-                                        <li><i class="fa fa-tag"></i> House Plan REFOM33HRE</li>
-                                    </ul>
-                                    <h5 class="price">$1950<span></span></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/home/three_bedroom.jpg">
-                                <div class="pic-tag">
-                                    <div class="f-text">New</div>
-                                    <div class="s-text">For Sale</div>
-                                </div>
-                                <div class="feature-author">
-                                    <div class="fa-pic">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fi-text">
-                                <div class="inside-text">
-                                    <h4> 3 Bedroom</h4>
-                                    <ul>
-                                        <li><i class="fa fa-tag"></i> House Plan REFOM33HRE</li>
-                                    </ul>
-                                    <h5 class="price">$1200</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-4 pdf-file">
                         <iframe src="files/Draft.pdf#toolbar=0"></iframe>
                         <!-- <iframe src="files/Draft.pdf#toolbar=0" height="200" width="300"> -->
@@ -462,9 +400,11 @@
                     </div>
                 </div>
             </div>
+            <button type="button" onclick="openModal();">Open Modal</button>
+
             <div class="row">
                 <div class="feature-carousel owl-carousel">
-                    <div class="col-lg-4">
+                    <div id="one_bed" class="col-lg-4">
                         <div class="feature-item">
                             <div class="fi-pic set-bg" data-setbg="img/home/one_bedroom.jpg">
                                 <div class="pic-tag">
@@ -501,7 +441,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div id="three_bed" class="col-lg-4">
                         <div class="feature-item">
                             <div class="fi-pic set-bg" data-setbg="img/home/three_bedroom.jpg">
                                 <div class="pic-tag">
@@ -538,7 +478,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div id="five_bed" class="col-lg-4">
                         <div class="feature-item">
                             <div class="fi-pic set-bg" data-setbg="img/home/five_bedroom.jpg">
                                 <div class="pic-tag">
@@ -549,6 +489,24 @@
                                     <div class="fa-pic">
                                     </div>
                                 </div>
+                                <ul class="room-features">
+                                    <li>
+                                        <i class="fa fa-arrows"></i>
+                                        <p>255 sqm</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bed"></i>
+                                        <p>5</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bath"></i>
+                                        <p>3</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-car"></i>
+                                        <p>8</p>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="fi-text">
                                 <div class="inside-text">
@@ -579,54 +537,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/home/three_bedroom.jpg">
-                                <div class="pic-tag">
-                                    <div class="f-text">New</div>
-                                    <div class="s-text">For Sale</div>
-                                </div>
-                                <div class="feature-author">
-                                    <div class="fa-pic">
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="fi-text">
-                                <div class="inside-text">
-
-
-
-                                    <h4> 3 Bedroom</h4>
-
-                                    <ul>
-
-                                        <li><i class="fa fa-tag"></i> House Plan REFOM33HRE</li>
-                                    </ul>
-                                    <h5 class="price">$1200</h5>
-                                </div>
-                                <ul class="room-features">
-                                    <li>
-                                        <i class="fa fa-arrows"></i>
-                                        <p>279 sqm</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bed"></i>
-                                        <p>3</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bath"></i>
-                                        <p>2</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-car"></i>
-                                        <p>2</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
+                    <div id="two_bed" class="col-lg-4">
                         <div class="feature-item">
                             <div class="fi-pic set-bg" data-setbg="img/home/two_bedroom.jpg">
                                 <div class="pic-tag">
@@ -638,6 +549,24 @@
                                         <span>On Market</span>
                                     </div>
                                 </div>
+                                <ul class="room-features">
+                                    <li>
+                                        <i class="fa fa-arrows"></i>
+                                        <p>80 sqm</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bed"></i>
+                                        <p>2</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bath"></i>
+                                        <p>2</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-car"></i>
+                                        <p>0</p>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="fi-text">
                                 <div class="inside-text">
@@ -669,54 +598,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/home/two_bedroom.jpg">
-                                <div class="pic-tag">
-                                    <div class="f-text">New</div>
-                                    <div class="s-text">For Sale</div>
-                                </div>
-                                <div class="feature-author">
-                                    <div class="fa-text">
-                                        <span>On Market</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fi-text">
-                                <div class="inside-text">
-                                    <h4>2 Bedroom</h4>
-                                    <ul>
-
-                                        <li><i class="fa fa-tag"></i> House Plan REFOM45HRE</li>
-                                    </ul>
-                                    <h5 class="price">$2000</h5>
-                                </div>
-                                <ul class="room-features">
-                                    <li>
-                                        <i class="fa fa-arrows"></i>
-                                        <p>198 sqm</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bed"></i>
-                                        <p>4</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bath"></i>
-                                        <p>2</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-car"></i>
-                                        <p>1</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="feature-carousel owl-carousel">
-                    <div class="col-lg-4">
+                    <div id="four_bed" class="col-lg-4">
                         <div class="feature-item">
                             <div class="fi-pic set-bg" data-setbg="img/home/four_bedroom.jpg">
                                 <div class="pic-tag">
@@ -754,7 +640,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div id="five_beds" class="col-lg-4">
                         <div class="feature-item">
                             <div class="fi-pic set-bg" data-setbg="img/home/five_bedroom.jpg">
                                 <div class="pic-tag">
@@ -766,6 +652,24 @@
                                     </div>
 
                                 </div>
+                                <ul class="room-features">
+                                    <li>
+                                        <i class="fa fa-arrows"></i>
+                                        <p>381 sqm</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bed"></i>
+                                        <p>5</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bath"></i>
+                                        <p>5</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-car"></i>
+                                        <p>3</p>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="fi-text">
                                 <div class="inside-text">
@@ -796,91 +700,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/home/four_bedroom.jpg">
-                                <div class="pic-tag">
-                                    <div class="f-text">NEW</div>
-                                    <div class="s-text">FOR SALE</div>
-                                </div>
-                                <div class="feature-author">
-                                    <div class="fa-pic">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fi-text">
-                                <div class="inside-text">
-                                    <h4>4 Bedroom</h4>
-                                    <ul>
-                                        <li><i class="fa fa-tag"></i> House Plan REFOM43HRE</li>
-                                    </ul>
-                                    <h5 class="price">$1950<span></span></h5>
-                                </div>
-                                <ul class="room-features">
-                                    <li>
-                                        <i class="fa fa-arrows"></i>
-                                        <p>335 sqm</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bed"></i>
-                                        <p>4</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bath"></i>
-                                        <p>3</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-car"></i>
-                                        <p>2</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/home/four_bedroom.jpg">
-                                <div class="pic-tag">
-                                    <div class="f-text">New</div>
-                                    <div class="s-text">For Sale</div>
-                                </div>
-                                <div class="feature-author">
-                                    <div class="fa-pic">
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="fi-text">
-                                <div class="inside-text">
-                                    <h4>4 Bedroom</h4>
-                                    <ul>
-
-                                        <li><i class="fa fa-tag"></i> House Plan REFOM52HRE</li>
-                                    </ul>
-                                    <h5 class="price">$1200</h5>
-                                </div>
-                                <ul class="room-features">
-                                    <li>
-                                        <i class="fa fa-arrows"></i>
-                                        <p>422 sqm</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bed"></i>
-                                        <p>4</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bath"></i>
-                                        <p>2</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-car"></i>
-                                        <p>2</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
+                    <div id="six_bed" class="col-lg-4">
                         <div class="feature-item">
                             <div class="fi-pic set-bg" data-setbg="img/home/six_bedroom.jpg">
                                 <div class="pic-tag">
@@ -922,198 +742,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/home/four_bedroom.jpg">
-                                <div class="pic-tag">
-                                    <div class="f-text">New</div>
-                                    <div class="s-text">For Sale</div>
-                                </div>
-
-                            </div>
-                            <div class="fi-text">
-                                <div class="inside-text">
-                                    <h4>4 Bedroom</h4>
-                                    <ul>
-
-                                        <li><i class="fa fa-tag"></i> House Plan REFOM41HRE</li>
-                                    </ul>
-                                    <h5 class="price">$2000</h5>
-                                </div>
-                                <ul class="room-features">
-                                    <li>
-                                        <i class="fa fa-arrows"></i>
-                                        <p>126 sqm</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bed"></i>
-                                        <p>4</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bath"></i>
-                                        <p>3</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-car"></i>
-                                        <p>1</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/home/four_bedroom.jpg">
-                                <div class="pic-tag">
-                                    <div class="f-text">New</div>
-                                    <div class="s-text">For Sale</div>
-                                </div>
-
-                            </div>
-                            <div class="fi-text">
-                                <div class="inside-text">
-                                    <h4>4 Bedroom</h4>
-                                    <ul>
-
-                                        <li><i class="fa fa-tag"></i> House Plan REFOM42HRE</li>
-                                    </ul>
-                                    <h5 class="price">$2000</h5>
-                                </div>
-                                <ul class="room-features">
-                                    <li>
-                                        <i class="fa fa-arrows"></i>
-                                        <p>221 sqm</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bed"></i>
-                                        <p>4</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bath"></i>
-                                        <p>3</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-car"></i>
-                                        <p>2</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature-item">
-                            <div class="fi-pic set-bg" data-setbg="img/home/four_bedroom.jpg">
-                                <div class="pic-tag">
-                                    <div class="f-text">New</div>
-                                    <div class="s-text">For Sale</div>
-                                </div>
-
-                            </div>
-                            <div class="fi-text">
-                                <div class="inside-text">
-                                    <h4>4 Bedroom</h4>
-                                    <ul>
-
-                                        <li><i class="fa fa-tag"></i> House Plan REFOM33HRE</li>
-                                    </ul>
-                                    <h5 class="price">$2000</h5>
-                                </div>
-                                <ul class="room-features">
-                                    <li>
-                                        <i class="fa fa-arrows"></i>
-                                        <p>221 sqm</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bed"></i>
-                                        <p>4</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-bath"></i>
-                                        <p>3</p>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-car"></i>
-                                        <p>2</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Feature Section End -->
-
-    <!-- How It Works Section Begin -->
-
-
-    <!-- <section class="howit-works spad">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <span>Create With the Heart, ...</span>
-                            <h2>What's Included</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="single-howit-works">
-                            <img src="img/home/floor_plan.jpg" alt="">
-                            <h4>Floor Plan</h4>
-                            <p>Interesting cost effective modern contemporary design in 3D.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-howit-works">
-                            <img src="img/home/exterior_elevation.jpg" alt="">
-                            <h4>Exterior Elevation</h4>
-                            <p>Modern 3 Bedroomed semi-detached Cluster House Project 3D proposal.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-howit-works">
-                            <img src="img/home/building_section.jpg" alt="">
-                            <h4>Building Section</h4>
-                            <p>Luxurious semi-detached Apartment Design in a Premium Development.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="single-howit-works">
-                            <img src="img/home/cabinet_elevations.jpg" alt="">
-                            <h4>Cabinet Elevations</h4>
-                            <p>Redefining the Gable concept using Exposed truss concept.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="single-howit-works">
-                            <img src="img/home/framing_plan.jpg" alt="">
-                            <h4>Framing Plan</h4>
-                            <p>Facelifting and Modifying the front of an existing design.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="single-howit-works">
-                            <img src="img/home/foundational_plan.jpg" alt="">
-                            <h4>Foundation Plan</h4>
-                            <p>Modern sustainable minimalist design.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="single-howit-works">
-                            <img src="img/home/electrical_plan.jpg" alt="">
-                            <h4>Electrical Plan</h4>
-                            <p>“Impeccable” 3D visuals of a Classic Contemporary design on a Corner stand.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-
-    <!-- How It Works Section End -->
 
     <!-- Video Section Begin -->
     <div class="video-section set-bg" data-setbg="img/topcomplex.jpg">
@@ -1354,92 +987,6 @@
     </div>
     <!-- Top Properties Section End -->
 
-    <!-- Floor Plans Section Begin -->
-
-    <!-- <section class="agent-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <span>Crispy Fresh Modern Plans</span>
-                        <h2>Floor Plans</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="agent-carousel owl-carousel">
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="img/agent/floorplan.jpg" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>3 Bedroom<span>Floor Plan</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="img/agent/ruralfloorplan.jpg" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Rural Home <span>Floor Plan</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="img/agent/oversight.jpg" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>Overview <span>View From Above</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="img/agent/floorplan.jpg" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>3 Bedroom <span>Floor Plan</span></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="single-agent">
-                            <div class="sa-pic">
-                                <img src="img/agent/floorplan.jpg" alt="">
-                                <div class="hover-social">
-                                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                                </div>
-                            </div>
-                            <h5>3 Bedroom <span>Floor Plan</span></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Agent Section End -->
-
     <!-- New Structural Plans Section Begin -->
     <section class="blog-section latest-blog spad">
         <div class="container">
@@ -1612,6 +1159,666 @@
     </footer>
     <!-- Footer Section End -->
 
+    <!-- Modal Population -->
+
+    <!-- <div class="modal">
+        <div class="modal-title">1 Bedroom House Plan REFOM11HRE. Price: $1000</div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="feature-carousel owl-carousel">
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/one_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <ul class="room-features">
+                                    <li>
+                                        <i class="fa fa-arrows"></i>
+                                        <p>102 sqm</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bed"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bath"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-car"></i>
+                                        <p>1</p>
+                                    </li>
+                                </ul>
+                            </div>                      
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/one_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div> 
+                            <div class="fi-text">
+                                <ul class="room-features">
+                                    <li>
+                                        <i class="fa fa-arrows"></i>
+                                        <p>102 sqm</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bed"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bath"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-car"></i>
+                                        <p>1</p>
+                                    </li>
+                                </ul>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/one_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <ul class="room-features">
+                                    <li>
+                                        <i class="fa fa-arrows"></i>
+                                        <p>102 sqm</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bed"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bath"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-car"></i>
+                                        <p>1</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/one_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <ul class="room-features">
+                                    <li>
+                                        <i class="fa fa-arrows"></i>
+                                        <p>102 sqm</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bed"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bath"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-car"></i>
+                                        <p>1</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pdf-file">
+                        <iframe src="files/Draft.pdf#toolbar=0"></iframe>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="modal-button modal-close">
+                <button type="button" onclick="closeModal();">Close</button>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="modal">
+        <div class="modal-title">1 Bedroom House Plan REFOM11HRE. Price: $1000</div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="feature-carousel owl-carousel">
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/two_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <ul class="room-features">
+                                    <li>
+                                        <i class="fa fa-arrows"></i>
+                                        <p>102 sqm</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bed"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bath"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-car"></i>
+                                        <p>1</p>
+                                    </li>
+                                </ul>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/two_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <ul class="room-features">
+                                    <li>
+                                        <i class="fa fa-arrows"></i>
+                                        <p>102 sqm</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bed"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bath"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-car"></i>
+                                        <p>1</p>
+                                    </li>
+                                </ul>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/two_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <ul class="room-features">
+                                    <li>
+                                        <i class="fa fa-arrows"></i>
+                                        <p>102 sqm</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bed"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bath"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-car"></i>
+                                        <p>1</p>
+                                    </li>
+                                </ul>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/two_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <ul class="room-features">
+                                    <li>
+                                        <i class="fa fa-arrows"></i>
+                                        <p>102 sqm</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bed"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-bath"></i>
+                                        <p>1</p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-car"></i>
+                                        <p>1</p>
+                                    </li>
+                                </ul>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pdf-file">
+                        <iframe src="files/Draft.pdf#toolbar=0"></iframe>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="modal-button modal-close">
+                <button type="button" onclick="closeModal();">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-title">{title}</div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="feature-carousel owl-carousel">
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/three_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>3 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/three_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>1 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/three_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>1 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/three_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>1 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pdf-file">
+                        <iframe src="files/Draft.pdf#toolbar=0"></iframe>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="modal-button modal-close">
+                <button type="button" onclick="closeModal();">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-title">{title}</div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="feature-carousel owl-carousel">
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/four_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>4 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/four_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>4 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/four_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>4 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/four_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>4 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pdf-file">
+                        <iframe src="files/Draft.pdf#toolbar=0"></iframe>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="modal-button modal-close">
+                <button type="button" onclick="closeModal();">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-title">{title}</div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="feature-carousel owl-carousel">
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/five_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>5 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/five_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>5 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/five_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>5 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/five_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>5 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pdf-file">
+                        <iframe src="files/Draft.pdf#toolbar=0"></iframe>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="modal-button modal-close">
+                <button type="button" onclick="closeModal();">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-title">{title}</div>
+        <div class="modal-content">
+            <div class="row">
+                <div class="feature-carousel owl-carousel">
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/six_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>6 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/six_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>6 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/six_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>6 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="feature-item">
+                            <div class="fi-pic set-bg" data-setbg="img/home/six_bedroom.jpg">
+                                <div class="pic-tag">
+                                    <div class="f-text">Trending</div>
+                                    <div class="s-text">For Sale</div>
+                                </div>
+                            </div>
+                            <div class="fi-text">
+                                <div class="inside-text">
+                                    <h4>6 Bedroom</h4>
+                                    <ul>
+                                        <li><i class="fa fa-tag"></i> House Plan REFOM11HRE</li>
+                                    </ul>
+                                    <h5 class="price">$1000<span></span></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 pdf-file">
+                        <iframe src="files/Draft.pdf#toolbar=0"></iframe>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="modal-button modal-close">
+                <button type="button" onclick="closeModal();">Close</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -1633,6 +1840,30 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
+
+    var modal = document.querySelector('.modal');
+    var modalTitle = document.querySelector('.modal-title');
+    var modalContent = document.querySelector('.modal-content');
+
+    function openModal() {
+        // modalTitle.innerHTML = modal_title;
+        // modalContent.innerHTML = modal_content;
+    
+        if(modal.style.display == 'block'){
+            // Hide Modal
+            closeModal();
+        } else {
+            modal.style.display = 'block';
+        }
+        
+    }
+    
+    function closeModal() {
+        modal.style.display = 'none';
+    
+        // modalTitle.innerHTML = '';
+        // modalContent.innerHTML = '';
+    }
     </script>
     <!--End of Tawk.to Script-->
 </body>

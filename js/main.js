@@ -19,6 +19,62 @@
         $("#preloder").delay(200).fadeOut("slow");
     });
 
+    var modal = document.querySelector('.modal');
+    var modalTitle = document.querySelector('.modal-title');
+    var modalContent = document.querySelector('.modal-content');
+
+    function openModal() {
+        // modalTitle.innerHTML = modal_title;
+        // modalContent.innerHTML = modal_content;
+    
+        if(modal.style.display == 'block'){
+            // Hide Modal
+            closeModal();
+        } else {
+            modal.style.display = 'block';
+        }
+        
+    }
+    
+    function closeModal() {
+        modal.style.display = 'none';
+    
+        // modalTitle.innerHTML = '';
+        // modalContent.innerHTML = '';
+    }
+
+    // $('.col-lg-4').on('click', function(){
+    //     openModal();
+    // });
+
+    $('#one_bed').on('click', function(){
+        openModal();
+    });
+
+    $('#two_bed').on('click', function(){
+        openModal();
+    });
+
+    $('#three_bed').on('click', function(){
+        openModal();
+    });
+
+    $('#four_bed').on('click', function(){
+        openModal();
+    });
+
+    $('#five_bed').on('click', function(){
+        openModal();
+    });
+
+    $('#five_beds').on('click', function(){
+        openModal();
+    });
+
+    $('#six_bed').on('click', function(){
+        openModal();
+    });
+
     /*------------------
         Background Set
     --------------------*/
