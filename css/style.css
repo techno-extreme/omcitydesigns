@@ -1,6 +1,6 @@
 /******************************************************************
-  Template Name: Azenta
-  Description: Azenta Properties HTML Template
+  Template Name: OM City Designs
+  Description: OM City Designs Properties HTML Template
   Author: colorlib
   Author URI: https://colorlib.com
   Version: 1.0
@@ -31,7 +31,10 @@
 
 /* Template default CSS
 /*----------------------------------------*/
-
+.pdf-file{
+	filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
 html, body {
 	height: 100%;
 	font-family: "Poppins", sans-serif;
