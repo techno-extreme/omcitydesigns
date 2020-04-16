@@ -23,7 +23,8 @@
     var modalTitle = document.querySelector('.modal-title');
     var modalContent = document.querySelector('.modal-content');
 
-    function openModal() {
+    function openModal(id) {
+        modal = document.querySelector('#' + id + '_modal')
         // modalTitle.innerHTML = modal_title;
         // modalContent.innerHTML = modal_content;
     
@@ -37,6 +38,9 @@
     }
     
     function closeModal() {
+        modal = document.querySelector('.modal');
+
+        
         modal.style.display = 'none';
     
         // modalTitle.innerHTML = '';
@@ -48,31 +52,31 @@
     // });
 
     $('#one_bed').on('click', function(){
-        openModal();
+        openModal('one_bed');
     });
 
     $('#two_bed').on('click', function(){
-        openModal();
+        openModal('two_bed');
     });
 
     $('#three_bed').on('click', function(){
-        openModal();
+        openModal('three_bed');
     });
 
     $('#four_bed').on('click', function(){
-        openModal();
+        openModal('four_bed');
     });
 
     $('#five_bed').on('click', function(){
-        openModal();
+        openModal('five_bed');
     });
 
     $('#five_beds').on('click', function(){
-        openModal();
+        openModal('five_beds');
     });
 
     $('#six_bed').on('click', function(){
-        openModal();
+        openModal('six_bed');
     });
 
     /*------------------
