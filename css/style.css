@@ -820,6 +820,7 @@ ul, ol {
 }
 .feature-carousel .col-lg-4 {
 	max-width: 100%;
+	border-radius: 10px;
 }
 .feature-carousel .col-sm-4 {
 	max-width: 100%;
@@ -1032,9 +1033,19 @@ ul, ol {
 	color: #ffffff;
 	border-color: #707079;
 }
+
 .top-properties-carousel .single-top-properties .stp-pic img {
 	height: 380px;
+	border-radius: 10px;
 }
+
+@media screen and (max-width: 600px) {
+	.top-properties-carousel .single-top-properties .stp-pic img {
+		height: 280px;
+		border-radius: 10px;
+	}
+}
+
 .top-properties-carousel .single-top-properties .stp-text {
 	padding-left: 40px;
 }
@@ -2127,6 +2138,7 @@ ul, ol {
 }
 .single-blog-item .sb-pic img {
 	min-width: 100%;
+	border-radius: 10px;
 }
 .single-blog-item .sb-text {
 	padding-top: 30px;
