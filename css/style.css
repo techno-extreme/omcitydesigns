@@ -593,8 +593,11 @@ ul, ol {
 /*---------------------
   Search Form
 -----------------------*/
-
 .search-form {
+	z-index: 99;
+	position: relative;
+}
+.search-form-home {
 	margin-top: -180px;
 	z-index: 99;
 	position: relative;
